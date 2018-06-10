@@ -61,6 +61,25 @@ Cambiar zona horaria `http://php.net/manual/es/timezones.america.php`
 
 Cambiar idioma `https://github.com/caouecs/Laravel-lang`
 
+## Rutas
+
+```
+//ruta return un string
+Route::get('/miruta', function () {
+    return 'Hola Mundo!, mi primera ruta.';
+});
+
+//ruta return un string con parametros obligatorios
+Route::get('/parametros/{name}/{lastname}', function ($name, $lastname) {
+    return 'Hola me llamo '.$name.' '.$lastname;
+});
+
+//ruta return un string con parametros opcionales
+Route::get('/opcional/{name}/{lastname?}', function ($name, $lastname = null) {
+    return 'Hola me llamo '.$name.' '.$lastname;
+});
+```
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
