@@ -26,3 +26,5 @@ Route::get('/parametros/{name}/{lastname}', function ($name, $lastname) {
 Route::get('/opcional/{name}/{lastname?}', function ($name, $lastname = null) {
     return 'Hola me llamo '.$name.' '.$lastname;
 });
+
+Route::get('/controlador/{name}', 'PruebaController@prueba');

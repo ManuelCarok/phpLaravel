@@ -79,6 +79,25 @@ Route::get('/opcional/{name}/{lastname?}', function ($name, $lastname = null) {
     return 'Hola me llamo '.$name.' '.$lastname;
 });
 ```
+## Controllers
+
+Ruta `app/Http/Controllers`
+
+Controllers Basico
+
+```
+namespace phpLaravel\Http\Controllers;
+
+use phpLaravel\Http\Controllers\Controller;
+
+class PruebaController extends Controller {
+
+    public function prueba ($param) {
+        return 'Ejecutando controlador! con el parametro '.$param;
+    }
+
+}
+```
 
 ## License
 
