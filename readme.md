@@ -211,6 +211,10 @@ Comandos Laravel
 
 `php artisan migrate`
 
+Comandos Agregar un campo a la tabla
+
+`php artisan make:migration [nombre] --table=[nombre de tabla]`
+
 
 ## License
 

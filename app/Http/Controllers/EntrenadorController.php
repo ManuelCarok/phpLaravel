@@ -40,8 +40,14 @@ class EntrenadorController extends Controller
         //obtener todos los datos return $request->all();
         //obtener un dato en especificos return $request->input('nombre');
 
+        if($request->hasFile('avatar')) {
+            $file = $request->file('avatar');
+            $name = time().$file->getClientOriginalName();
+            $file->move(public_path().'/images/', $name);
+        }
         $entrenador = new Entrenador();
         $entrenador->nombre = $request->input('nombre');
+        $entrenador->avatar = $name;
         $entrenador->save();
 
         return 'Guardado';
