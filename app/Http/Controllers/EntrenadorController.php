@@ -35,7 +35,9 @@ class EntrenadorController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //obtener todos los datos return $request->all();
+        //obtener un dato en especificos return $request->input('nombre');
+        return $request->all();
     }
 
     /**
