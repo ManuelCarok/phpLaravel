@@ -37,7 +37,12 @@ class EntrenadorController extends Controller
     {
         //obtener todos los datos return $request->all();
         //obtener un dato en especificos return $request->input('nombre');
-        return $request->all();
+
+        $entrenador = new Entrenador();
+        $entrenador->nombre = $request->input('nombre');
+        $entrenador->save();
+
+        return 'Guardado';
     }
 
     /**

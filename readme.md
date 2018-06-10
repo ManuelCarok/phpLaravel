@@ -55,7 +55,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 ## Configuracion del proyecto
 
-Cambiar nombre ejecutando el comando `php artisan app:name phpLaravel`
+Cambiar nombre ejecutando el comando `php artisan app:name [nombre]`
 
 Cambiar zona horaria `http://php.net/manual/es/timezones.america.php`
 
@@ -85,7 +85,7 @@ Ruta `app/Http/Controllers`
 
 Controllers Basico
 
-comando `php artisan make:controller`
+comando `php artisan make:controller [nombre]`
 
 ```
 namespace phpLaravel\Http\Controllers;
@@ -103,7 +103,7 @@ class PruebaController extends Controller {
 
 Controllers Resource (CRUD)
 
-comando `php artisan make:controller --resource`
+comando `php artisan make:controller [nombre] --resource`
 
 ```
 namespace phpLaravel\Http\Controllers;
@@ -190,6 +190,16 @@ class EntrenadorController extends Controller
     }
 }
 ```
+
+## Models
+
+Modelo Basico
+
+comando `php artisan make:model [nombre]`
+
+Modelo con migracion
+
+comando `php artisan make:model [nombre] --m`
 
 ## License
 
