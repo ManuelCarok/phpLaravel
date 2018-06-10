@@ -201,6 +201,17 @@ Modelo con migracion
 
 comando `php artisan make:model [nombre] --m`
 
+## Base de Datos MySQL
+
+Comandos Querys
+
+`CREATE SCHEMA `laravel` DEFAULT CHARACTER SET utf8;`
+
+Comandos Laravel
+
+`php artisan migrate`
+
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

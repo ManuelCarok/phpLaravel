@@ -2,6 +2,7 @@
 
 namespace phpLaravel\Http\Controllers;
 
+use phpLaravel\Entrenador;
 use Illuminate\Http\Request;
 
 class EntrenadorController extends Controller
