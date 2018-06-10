@@ -14,8 +14,9 @@ class EntrenadorController extends Controller
      */
     public function index()
     {
+        $entrenadores = Entrenador::all();
         //se ejecuta por defecto
-        return 'Bienvenido entrenador!';
+        return view('entrenador.index', compact('entrenadores'));
     }
 
     /**

@@ -10,7 +10,12 @@
 </head>
 
 <body>
-    <div class="container">
+    <nav class="navbar navbar-dark bg-primary">
+        <a href="" class="navbar-brand">
+            phpLaravel
+        </a>
+    </nav>
+    <div class="container" style="margin-top: 10px;">
         @yield('content')
     </div>
 </body>
